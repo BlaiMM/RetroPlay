@@ -1,0 +1,7 @@
+{
+  "name": "RetroPlay",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
