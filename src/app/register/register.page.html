@@ -1,9 +1,24 @@
-<ion-header>
+<ion-header align="center">
   <ion-toolbar>
-    <ion-title>register</ion-title>
+    <ion-title >Register</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-item lines="solid">
+    <ion-label position="floating" style="margin-top: 20px;">Email</ion-label>
+    <br>
+    <ion-input type="text" required></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Contrasenya</ion-label>
+    <br>
+    <ion-input type="password" required></ion-input>
+  </ion-item>
+  <ion-item lines="full">
+    <ion-label position="floating">Repetir Contrasenya</ion-label>
+    <br>
+    <ion-input type="password" required></ion-input>
+  </ion-item>
+  <ion-button type="submit" color="warning" expand="block" routerLink="/home">Som'hi</ion-button>
 </ion-content>
