@@ -1,9 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>ventaconsola</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<ion-item lines="none">
+  <ion-icon slot="end" style="margin-right:20px;" name="log-out" routerLink="/venta"></ion-icon>
+</ion-item>
 <ion-content>
+  <ion-item lines="none" style="margin-top: 30px;">
+    <h1>Puja la teva consola</h1>
+  </ion-item>
+  <ion-item  lines="none" style="margin-top: 40px;">
+    <ion-input type="text" placeholder="Nom Consola"></ion-input>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-select placeholder="Anys Estrena">
+      <ion-select-option value="1985-1990">1985-1990</ion-select-option>
+      <ion-select-option value="1990-1995">1990-1995</ion-select-option>
+      <ion-select-option value="1995-2000">1990-1995</ion-select-option>
+      <ion-select-option value="2000-2005">1990-1995</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item  lines="none">
+    <ion-label>Preu de la consola : </ion-label>
+    <ion-input type="number" value="0.0"></ion-input>
+  </ion-item>
+  <ion-item style="margin-top: 40px;" lines="none">
+    <ion-label for="site-search">Foto : </ion-label>
+    <input type="search" id="site-search" name="adressafoto">
+    <ion-button slot="end" color="warning">Search</ion-button>
+  </ion-item>
 
 </ion-content>
