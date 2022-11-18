@@ -23,7 +23,15 @@ const routes: Routes = [
   {
     path: 'venta',
     loadChildren: () => import('./venta/venta.module').then( m => m.VentaPageModule)
+  },  {
+    path: 'ventaconsola',
+    loadChildren: () => import('./ventaconsola/ventaconsola.module').then( m => m.VentaconsolaPageModule)
+  },
+  {
+    path: 'ventajoc',
+    loadChildren: () => import('./ventajoc/ventajoc.module').then( m => m.VentajocPageModule)
   }
+
  
 ];
 
