@@ -13,12 +13,13 @@ export class VentajocPage implements OnInit {
 
   
   ngOnInit() {
-    console.log("Poroa");
+   
   }
 
   buscaArchiu(){
-    
-  this.file.checkDir(this.file.dataDirectory, 'mydir').then(_ => console.log('Directory exists')).catch(err =>
+    //alert("prova");
+  console.log('this.file.dataDirectory');
+  this.file.checkDir(this.file.dataDirectory, 'mydir').then(res => console.log('Directory exists')).catch(err =>
   console.log('Directory doesnt exist'));
   }
 }
