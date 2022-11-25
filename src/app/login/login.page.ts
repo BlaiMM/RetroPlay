@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Route, Router } from '@angular/router'
+import { ServeisDadesService } from '../services/serveis-dades.service';
 
 
 
@@ -20,12 +21,21 @@ export class LoginPage implements OnInit {
   navCtrl: any;
   
 
-  constructor(private router:Router ) { }
+  constructor(private router:Router, private serveiDades : ServeisDadesService ) { }
 
   ngOnInit() {
   }
   registre(){
     this.router.navigate(['/register']);
+  }
+
+  FesLogin(){
+    this.serveiDades.FesLogin().subscribe((Response) => {
+      console.log(Response);
+      //cal mirar si esta bé o no 
+      //fer redirect a register si no es correcte el login
+      //this.router.navigate(['/home']);
+    });
   }
 
   
