@@ -34,7 +34,7 @@ export class LoginPage implements OnInit {
       console.log(Response);
       //cal mirar si esta bé o no 
       //fer redirect a register si no es correcte el login
-      //this.router.navigate(['/home']);
+      this.router.navigate(['/home']);
     });
   }
 
