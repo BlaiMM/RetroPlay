@@ -9,8 +9,8 @@ export class ServeisDadesService {
 
   constructor(private http:HttpClient) { }
 
-  FesLogin(): Observable<any> {
-    return this.http.post('http://retroplay.mygamesonline.org/comprovarLogin.php',{data: 'blai@educem.cat', pass: '1234'} );
+  FesLogin(nom: any, password: any): Observable<any> {
+    return this.http.post('http://retroplay.mygamesonline.org/comprovarLogin.php',{username: nom, pass: password} );
     }
 }
 

@@ -7,9 +7,9 @@
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <form>
+  <form [formGroup]="loginForm">
     <ion-label lines="solid" >
-      <ion-img src="./../../assets/descarga.png" style="height: 90px;" ></ion-img>
+      <ion-img src="./../../assets/icon/Logotipo_videojuegos_colorido_llamativo_rosa_amarillo_azul.png" style="height: 200px;" ></ion-img>
     </ion-label>
     <ion-label>
       
@@ -17,11 +17,11 @@
     </ion-label>
     <ion-item lines="solid">
       <ion-label position="floating" style="margin-top: 20px;">Email</ion-label>
-      <ion-input type="text" required></ion-input>
+      <ion-input type="text" required formControlName="username"></ion-input>
     </ion-item>
     <ion-item lines="full">
       <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" required></ion-input>
+      <ion-input type="password" required formControlName="password"></ion-input>
     </ion-item>
     <ion-row>
       <ion-col>
